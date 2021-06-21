@@ -12,6 +12,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 import { ProductService } from './shared/product.service';
+import { AuctionMaterialModule } from './auction-material/auction-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { ProductService } from './shared/product.service';
     SearchComponent,
     StarsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, AuctionMaterialModule, BrowserAnimationsModule],
   providers: [ProductService],
   bootstrap: [AppComponent],
 })
